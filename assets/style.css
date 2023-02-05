@@ -85,7 +85,7 @@ body {
   bottom: 0px;
   opacity: 0;
   z-index: -999;
-  transition: opacity 0.6s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .slides {
@@ -282,6 +282,7 @@ body {
   font-weight: 600;
   font-size: 3rem;
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   text-decoration: none;
   text-shadow: 1px 1px 1px rgba(253, 254, 254, 0.999);
@@ -477,10 +478,11 @@ body {
   }
 }
 
-@media (max-width: 576px) and (min-width: 200.8px) {
+@media (max-width: 576px) and (min-width: 370px) {
   .titli-link-page {
     font-weight: 400;
     font-size: 2rem;
+    flex-wrap: wrap;
   }
 
   .text-bg-dark {
@@ -522,6 +524,114 @@ body {
   .control-next,
   .control-prev {
     width: 15%;
+  }
+
+  .slide:nth-of-type(1) {
+    background-position: -400px;
+  }
+  .slide:nth-of-type(2) {
+    background-position: -300px;
+  }
+  .slide:nth-of-type(3) {
+    background-position: -200px;
+  }
+  .slide:nth-of-type(4) {
+    background-position: -200px;
+  }
+
+  .slide:nth-of-type(5) {
+    background-position: -300px;
+  }
+  .slide:nth-of-type(6) {
+    background-position: -300px;
+  }
+  .slide:nth-of-type(7) {
+    background-position: -250px;
+  }
+}
+
+@media (max-width: 371px) and (min-width: 50px) {
+  .titli-link-page {
+    font-weight: 200;
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .describe-text2 {
+    color: #045659;
+    top: 66%;
+    left: 48%;
+  }
+
+  .describe-text3 {
+    color: #fff;
+    top: 20%;
+    left: 45%;
+  }
+
+  .describe-text4 {
+    color: #fff;
+    top: 73%;
+    left: 38%;
+  }
+
+  .describe-text5 {
+    color: #fff;
+    top: 70%;
+    left: 38%;
+  }
+
+  .describe-text6 {
+    color: #045659;
+    top: 68%;
+    left: 38%;
+  }
+
+  .describe-text7 {
+    color: #fff;
+    top: 70%;
+    left: 34%;
+  }
+
+  .text-bg-dark {
+    font-size: 0.8rem;
+  }
+
+  .btn-tablet {
+    width: 3rem;
+    font-size: 0.5rem;
+  }
+
+  .form-control {
+    width: 3.5rem;
+    font-size: 0.5rem;
+    margin-right: 0px !important;
+  }
+
+  .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+
+  .control-pause {
+    font-size: 2rem;
+    top: 45%;
+    left: 50%;
+    height: 0;
+  }
+
+  .icon-arrow-right,
+  .icon-arrow-left {
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .control-next,
+  .control-prev {
+    width: 20%;
   }
 
   .slide:nth-of-type(1) {
