@@ -214,8 +214,8 @@ body {
 
 .control-pause {
   font-size: 5rem;
-  top: 44%;
-  left: 50%;
+  top: 43%;
+  left: 49%;
   height: 0;
   transition: opacity 0.25s ease-in-out 0.5s;
   opacity: 0;
@@ -323,24 +323,24 @@ body {
 .describe-text4 {
   color: #fff;
   top: 73%;
-  left: 48%;
+  left: 50%;
 }
 
 .describe-text5 {
   color: #fff;
-  top: 70%;
+  top: 73%;
   left: 50%;
 }
 
 .describe-text6 {
   color: #045659;
-  top: 68%;
+  top: 73%;
   left: 50%;
 }
 
 .describe-text7 {
   color: #fff;
-  top: 70%;
+  top: 72%;
   left: 44%;
 }
 
@@ -415,6 +415,10 @@ body {
 }
 
 @media (max-width: 768px) and (min-width: 576px) {
+  .offcanvas.offcanvas-end {
+    width: 20%;
+  }
+
   .titli-link-page {
     font-weight: 500;
     font-size: 2.5rem;
@@ -486,6 +490,10 @@ body {
 }
 
 @media (max-width: 576px) and (min-width: 370px) {
+  .offcanvas.offcanvas-end {
+    width: 25%;
+  }
+
   .titli-link-page {
     font-weight: 400;
     font-size: 2rem;
@@ -558,46 +566,56 @@ body {
 }
 
 @media (max-width: 371px) and (min-width: 50px) {
+  .offcanvas.offcanvas-end {
+    width: 35%;
+  }
+
   .titli-link-page {
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 1.5rem;
     flex-wrap: wrap;
+  }
+
+  .describe-text1 {
+    color: #045659;
+    top: 23%;
+    left: 16%;
   }
 
   .describe-text2 {
     color: #045659;
-    top: 66%;
-    left: 48%;
+    top: 68%;
+    left: 18%;
   }
 
   .describe-text3 {
     color: #fff;
     top: 20%;
-    left: 45%;
+    left: 30%;
   }
 
   .describe-text4 {
     color: #fff;
-    top: 73%;
-    left: 38%;
+    top: 79%;
+    left: 28%;
   }
 
   .describe-text5 {
     color: #fff;
-    top: 70%;
-    left: 38%;
+    top: 79%;
+    left: 28%;
   }
 
   .describe-text6 {
     color: #045659;
-    top: 68%;
-    left: 38%;
+    top: 79%;
+    left: 28%;
   }
 
   .describe-text7 {
     color: #fff;
-    top: 70%;
-    left: 34%;
+    top: 79%;
+    left: 18%;
   }
 
   .text-bg-dark {
@@ -624,8 +642,8 @@ body {
 
   .control-pause {
     font-size: 2rem;
-    top: 45%;
-    left: 50%;
+    top: 47%;
+    left: 47%;
     height: 0;
   }
 
@@ -638,7 +656,7 @@ body {
 
   .control-next,
   .control-prev {
-    width: 20%;
+    width: 14%;
   }
 
   .slide:nth-of-type(1) {
