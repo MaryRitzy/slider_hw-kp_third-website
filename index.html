@@ -5,164 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Satisfy&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/iconsfont.css">
-
-
     <link rel="stylesheet" href="assets/style.css">
-    <title>Ergonomic chairs</title>
+    <title>Document</title>
 </head>
 
 <body>
 
-    <header class="header mb-2">
+    <div id="carousel" class="carousel">
 
-        <div class="row">
-            <div class="col bg-own p-0">
-                <div class="navbar navbar-dark bg-own fixed-top">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">YCW</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                            aria-labelledby="offcanvasDarkNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Сategories
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="#">Chairs</a></li>
-                                            <li><a class="dropdown-item" href="#">Office chair</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">Workstation</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <form class="d-flex mt-3" role="search">
-                                    <input class="form-control form-field me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                    <button class="btn btn-tablet btn-success" type="submit">Search</button>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+        <div id="slides" class="slides">
+            <div class="slide active">Slide 1</div>
+            <div class="slide">Slide 2</div>
+            <div class="slide">Slide 3</div>
+            <div class="slide">Slide 4</div>
+            <div class="slide">Slide 5</div>
         </div>
-    </header>
 
-    <div class="row bg-row me-0 mb-0 mt-3 pt-4">
+        <div id="controls-container" class="controls">
+            <div id="pause-btn" class="control control-pause"><i class="fas fa-pause-circle"></i></div>
 
-        <div class="p-0 m-0 container-fluid">
+            <div id="prev-btn" class="control control-prev"><i class="fas fa-angle-left"></i></div>
 
-            <div id="carousel" class="carousel">
-
-                <div id="slides" class="slides">
-                    <div class="slide item active">
-                        <div><a class="titli-link-page describe-text1" href="#" target="_blank">Workstation chair</a>
-                        </div>
-                    </div>
-
-                    <div class="slide item">
-                        <div><a class="titli-link-page describe-text2" href="#" target="_blank">Ergonomic chairs</a>
-                        </div>
-                    </div>
-
-                    <div class="slide item">
-                        <div><a class="titli-link-page describe-text3" href="#" target="_blank">Workstation</a>
-                        </div>
-                    </div>
-
-                    <div class="slide item">
-                        <div><a class="titli-link-page describe-text4" href="#" target="_blank">Workstation</a>
-                        </div>
-                    </div>
-
-                    <div class="slide item">
-                        <div><a class="titli-link-page describe-text5" href="#" target="_blank">Workstation</a>
-                        </div>
-                    </div>
-
-                    <div class="slide item">
-                        <div><a class="titli-link-page describe-text6" href="#" target="_blank">Workstation</a>
-                        </div>
-                    </div>
-
-                    <div class="slide item">
-                        <div><a class="titli-link-page describe-text7" href="#" target="_blank">Ergonomic chair</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <div id="next-btn" class="control control-next"><i class="fas fa-angle-right"></i></div>
         </div>
+
+        <div id="indicators-container" class="indicators">
+            <div class="indicator active" data-slide-to="0"></div>
+            <div class="indicator" data-slide-to="1"></div>
+            <div class="indicator" data-slide-to="2"></div>
+            <div class="indicator" data-slide-to="3"></div>
+            <div class="indicator" data-slide-to="4"></div>
+        </div>
+
     </div>
 
-    <footer class="footer">
-        <div class="row">
-            <div class="col  bg-own3 b-0">
-
-                <div class="container">
-                    <div class="py-3 my-4">
-                        <ul class="nav justify-content-center pb-3 mb-3">
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-                        </ul>
-
-                        <div class="d-flex flex-column flex-sm-row justify-content-between p-2 border-top">
-                            <p class="mb-2">© 2022 Company, Inc. All rights reserved.</p>
-                            <ul class="list-unstyled d-flex mb-2">
-                                <li class="ms-3"><a class="link-dark" href="#"><img src="assets/img/svg/twitter.svg"
-                                            alt="twitter" width="24" height="24" class="bi">
-                                    </a></li>
-                                <li class="ms-3"><a class="link-dark" href="https://instagram.com" target="_blank"><img
-                                            src="assets/img/svg/instagram.svg" alt="instagram" width="24" height="24"
-                                            class="bi">
-                                    </a></li>
-                                <li class="ms-3"><a class="link-dark" href="https://facebook.com" target="_blank"><img
-                                            src="assets/img/svg/facebook.svg" alt="facebook" width="24" height="24"
-                                            class="bi">
-                                    </a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js" type="module"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
