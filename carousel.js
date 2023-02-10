@@ -161,7 +161,10 @@ class Carousel {
   _pressKey(e) {
     if (e.code === this.CODE_ARROW_LEFT) this.prev();
     if (e.code === this.CODE_ARROW_RIGHT) this.next();
-    if (e.code === this.CODE_SPACE) this.pausePlay();
+    if (e.code === this.CODE_SPACE) { 
+      e.preventDefault();
+       this.pausePlay();
+      }
   }
 
   initApp() {
